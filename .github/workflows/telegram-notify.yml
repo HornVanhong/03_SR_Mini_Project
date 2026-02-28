@@ -17,7 +17,7 @@ jobs:
 
           COMMIT_MSG=$(echo "${{ github.event.head_commit.message || 'No Commit message' }}" | head -n 1 | sed 's/[*_`\[\]]/\\&/g')
 
-          curl -v -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+          curl -v -X POST "https://api.telegram.org/bot8795480395:AAHvrOIcXzlYo720ddtESFpCwGlx-79EciM/sendMessage" \
             -H "Content-Type: application/json" \
             -d "{
               \"chat_id\": \"-1003722720045\",
